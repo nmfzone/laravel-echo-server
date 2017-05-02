@@ -45,7 +45,7 @@ export class Cli {
             }
 
             this.saveConfig(options).then(() => {
-                console.log('Configuration file saved. Run ' + colors.magenta.bold('laravel-echo-server start') + ' to run server.');
+                console.log('Configuration file saved. Run ' + colors.magenta.bold('laravel-echo-server-fix start') + ' to run server.');
 
                 process.exit();
             }, (error) => {

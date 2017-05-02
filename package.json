@@ -41,6 +41,6 @@
     "typescript": "^2.0.3"
   },
   "bin": {
-    "laravel-echo-server": "bin/server.js"
+    "laravel-echo-server-fix": "bin/server.js"
   }
 }

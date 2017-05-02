@@ -4,7 +4,7 @@ var https = require('https');
 var express = require('express');
 var url = require('url');
 var io = require('socket.io');
-var RandExp = require('randexp');
+var RandExp = require('randexp').randexp;
 import { Log } from './log';
 
 export class Server {

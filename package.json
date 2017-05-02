@@ -1,10 +1,10 @@
 {
   "name": "laravel-echo-server",
-  "version": "1.2.8",
+  "version": "1.0.0",
   "description": "Laravel Echo Node JS Server for Socket.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tlaverdure/Laravel-Echo-Server.git"
+    "url": "https://github.com/nmfzone/laravel-echo-server.git"
   },
   "main": "dist/index.js",
   "keywords": [

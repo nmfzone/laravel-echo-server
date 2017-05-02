@@ -19,7 +19,7 @@ Install npm package globally with the following command:
 
 ``` shell
 
-$   npm install -g laravel-echo-server
+$   npm install -g laravel-echo-server-fix
 
 ```
 
@@ -29,7 +29,7 @@ Run the init command in your project directory:
 
 ``` shell
 
-$   laravel-echo-server init
+$   laravel-echo-server-fix init
 
 ```
 
@@ -41,7 +41,7 @@ The Laravel Echo Server exposes a light http API to perform broadcasting functio
 
 ``` shell
 
-$ laravel-echo-server client:add APP_ID
+$ laravel-echo-server-fix client:add APP_ID
 
 ```
 
@@ -60,7 +60,7 @@ http://app.dev:6001/apps/APP_ID/events?auth_key=skti68i...
 
 ```
 
-You can remove clients with `laravel-echo-server client:remove APP_ID`
+You can remove clients with `laravel-echo-server-fix client:remove APP_ID`
 
 #### Run The Server
 
@@ -68,7 +68,7 @@ in your project root directory, run
 
 ``` shell
 
-$ laravel-echo-server start
+$ laravel-echo-server-fix start
 
 ```
 
@@ -245,7 +245,7 @@ add a script tag to your html like so:
 
 ```
 
-_Note: When using the socket.io client library from your running server, remember to check that the `io` global variable is defined before subscribing to events._ 
+_Note: When using the socket.io client library from your running server, remember to check that the `io` global variable is defined before subscribing to events._
 
 #### Better performance with [µWebSockets](https://github.com/uWebSockets/uWebSockets)
 For extra performance, you can use the faster `uws` engine instead of `ws`, by setting the `wsEngine` option for Socket.IO in `laravel-echo-server.json`:

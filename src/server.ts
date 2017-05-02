@@ -4,6 +4,7 @@ var https = require('https');
 var express = require('express');
 var url = require('url');
 var io = require('socket.io');
+var RandExp = require('randexp');
 import { Log } from './log';
 
 export class Server {
@@ -38,6 +39,12 @@ export class Server {
                 Log.success(`Running at ${host} on port ${this.options.port}`);
 
                 resolve(this.io);
+
+                this.io.eio.generateId = () => {
+                    var socketIdSpec = this.options.socketIdSpec || '([a-zA-Z0-9]{15})';
+
+                    return RandExp(socketIdSpec);
+                };
             }, error => reject(error));
         });
     }
